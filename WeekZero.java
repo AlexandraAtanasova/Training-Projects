@@ -9,9 +9,8 @@ public class WeekZero{
         System.out.println("2");
         System.out.println("- ");
         String template = scanner.nextLine();
-        int temp = Integer.parseInt(template);
         
-        System.out.println("You have chosen template" + template + ". Follow the prompts below to complete story generation");
+        System.out.println("You have chosen template " + template + ". Follow the prompts below to complete story generation");
 
         System.out.println("Let's start with our nouns, pick two proper nouns, one place, and one object.");
         System.out.println("- ");
@@ -40,7 +39,7 @@ public class WeekZero{
         System.out.println("- ");
         String ad3 = scanner.nextLine();
 
-        if(temp == 1){
+        if(template == "1"){
             System.out.println("Today " + proper_noun1 + " and I were going to a " + noun1 + ".");
             System.out.println("There just so happened to be a soccer match going on there: The " + noun2 + "s vs. " + proper_noun2 + ".");
             System.out.println("The players on The " + noun2 + "s were particularly " + ad1 + ". The players on " + proper_noun2 + "? Not so much.");
