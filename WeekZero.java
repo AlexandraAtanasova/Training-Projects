@@ -37,7 +37,7 @@ public class WeekZero{
         String ad1 = scanner.nextLine();
         System.out.println("- ");
         String ad2 = scanner.nextLine();
-        System.out.println("> ");
+        System.out.println("- ");
         String ad3 = scanner.nextLine();
 
         if(temp == 1){
