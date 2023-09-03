@@ -4,6 +4,8 @@ public class WeekZero{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Welcome to MadLibs generator, follow the upcoming prompts to complete generation.")
+        
         System.out.println("Let's start with our nouns, pick two proper nouns, one place, and one object.");
         System.out.println("- ");
         String proper_noun1 = scanner.nextLine();
