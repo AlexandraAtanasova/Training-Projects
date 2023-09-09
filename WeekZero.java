@@ -4,8 +4,15 @@ public class WeekZero{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Welcome to MadLibs generator, follow the upcoming prompts to complete generation.");
+        System.out.println("Welcome to Madlibs Generator! Before we begin please choose a template.");
+        System.out.println("1");
+        System.out.println("2");
+        System.out.println("- ");
+        String template = scanner.nextLine();
+        int temp = Integer.parseInt(template);
         
+        System.out.println("You have chosen template" + template + ". Follow the prompts below to complete story generation");
+
         System.out.println("Let's start with our nouns, pick two proper nouns, one place, and one object.");
         System.out.println("- ");
         String proper_noun1 = scanner.nextLine();
@@ -30,10 +37,10 @@ public class WeekZero{
         String ad1 = scanner.nextLine();
         System.out.println("- ");
         String ad2 = scanner.nextLine();
-        System.out.println("- ");
+        System.out.println("> ");
         String ad3 = scanner.nextLine();
 
-        
+        if(temp == 1){
             System.out.println("Today " + proper_noun1 + " and I were going to a " + noun1 + ".");
             System.out.println("There just so happened to be a soccer match going on there: The " + noun2 + "s vs. " + proper_noun2 + ".");
             System.out.println("The players on The " + noun2 + "s were particularly " + ad1 + ". The players on " + proper_noun2 + "? Not so much.");
@@ -41,6 +48,21 @@ public class WeekZero{
             System.out.println("The game was about to come to a close when " + proper_noun1 + verb3 + ".");
             System.out.println("Due to the disrupton the crowd became very" + ad3 + ".");
 
+        }
+
+        else {
+            System.out.println("Sorry, but the template you chose was unable to load, loading template 1 instead");
+            System.out.println("Type X to continue");
+            String x = scanner.nextLine();
+            System.out.println("Generating template 1...");
+
+            System.out.println("Today " + proper_noun1 + " and I were going to a " + noun1 + ".");
+            System.out.println("There just so happened to be a soccer match going on there: The " + noun2 + "s vs. " + proper_noun2 + ".");
+            System.out.println("The players on The " + noun2 + "s were particularly " + ad1 + ". The players on " + proper_noun2 + "? Not so much.");
+            System.out.println("Even if the players on " + proper_noun2 + " weren't as " + ad1 + " (or as " + ad2 + " either), they definetly " + verb1 + " and " + verb2 + " better.");
+            System.out.println("The game was about to come to a close when " + proper_noun1 + " " + verb3 + ".");
+            System.out.println("Due to the disrupton the crowd became very " + ad3 + ".");
+        }
 
         System.out.println(" ");
         System.out.println("Thank you for using MadLibs Generator");
