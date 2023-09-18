@@ -53,7 +53,6 @@ public class WeekZero{
         else {
             System.out.println("Sorry, but the template you chose was unable to load, loading template 1 instead");
             System.out.println("Type X to continue");
-            String x = scanner.nextLine();
             System.out.println("Generating template 1...");
 
             System.out.println("Today " + proper_noun1 + " and I were going to a " + noun1 + ".");
